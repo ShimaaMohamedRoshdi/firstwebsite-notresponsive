@@ -1,0 +1,635 @@
+*{
+    box-sizing: border-box;
+    font-size: 20;
+    
+    
+}
+p{
+    font-size: 20;
+}
+body{
+    margin: 0;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    background-color:black;
+    z-index: 15;
+}
+
+.navbar_left{
+    float: left;
+}
+.navbar_right{
+    float: right;
+}
+.ul_nav li{
+    display: inline-block;
+    padding: 10px;
+}
+.ul_nav{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: red;
+    cursor: pointer;
+}
+.bakery_logo{
+    width: 180px;
+}
+ .home{
+    height: 100vh;
+  width: 100%;
+    padding: 1px;
+    background-position: center;
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(10\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+} 
+.div1{
+  
+    height: 720px;
+    position: relative; 
+}
+ .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.content{
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+} 
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.btn:hover{
+    background-color:lightyellow;
+}
+
+
+/* section2 */
+.container{
+    width: 80%;
+    height: 400px;
+    /* background-color: blanchedalmond; */
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+.Food_item{
+    float: left;
+    background-color:rgb(71, 71, 92);
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+
+    position: relative;
+    
+}
+
+.ww{
+    margin: 0px 20px;
+}
+.Food_image{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.Food_image img{
+    width: 100%;
+    /* position: relative; */
+}
+/* ///////////////////////////////// */
+.Food_Overlayy{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+}
+.Food_item:hover .Food_Overlayy{
+    visibility: visible;
+    opacity: 0.7;
+}
+/* ////////////////////////////////// */
+
+.Food_Overlayy a{
+    display: block;
+    color: blue;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    font-size: 19px;
+}
+.Food_Overlayy a i {
+    line-height: 40px;
+}
+.Food_item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition:1s ;
+    -webkit-transition:1s ;
+    -moz-transition:1s ;
+    -ms-transition:1s ;
+    -o-transition:1s ;
+}
+.Food_item:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+p{
+    color: white;
+}
+
+/* section3 */
+.Section3{
+    margin-top: 100px;
+    width: 80%;
+    overflow: auto;
+    background-color:rgb(71, 71, 92) ;
+    padding: 40px;
+    margin: auto;
+}
+.p1{
+    color: white;
+}
+.hh{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 80PX;
+    color:white;
+}
+.choose_content{
+    width: 50%;
+    float: left;
+}
+.choose_pic{
+    width: 50%;
+    float: right;
+
+}
+.choose_pic img{
+    width: 80%;
+    border-radius: 50px;
+    
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+ 
+  
+}
+.dot:hover{
+    background-color: blue;
+}
+.iconss{
+    color: white;
+    display: inline-block;
+}
+
+
+/* section3 */
+.pweb{
+    color: black;
+}
+.pweb1{
+    color: blue;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+.websitewelcome{
+    
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 14px 18px;
+    border: 3px solid grey;
+   
+   margin: 15px 18px;
+  position: relative;
+}
+.websitewelcome::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+ 
+}
+.websitewelcome:hover::after {
+width: 100%;
+height: 100%;
+opacity: 0.7;
+
+}
+
+.iconsswebsitewelcome{
+    text-align: center;
+    color:steelblue;
+
+    font-size: 40px;
+
+}
+
+.h1website{
+    text-align: center;
+    color:black;
+    margin-bottom: 100px;
+    position: relative;
+   
+}
+.h1website::before {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    
+    left: 40%;
+    width: 15%;
+    height: 5px;
+    
+    background-color: steelblue;
+   }
+
+
+/* section4 */
+.item{
+    width: 33.3333%;
+    margin-right: 10px;
+    padding: 10px;
+   background-color: rgb(71, 71, 92); 
+ 
+    border-radius: 5px;
+    position: relative;
+  }
+  img {
+    width: 70%;
+  
+}
+
+.containeritem{
+   
+   text-align: center;
+    display: flex;
+ 
+}
+.item::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0,0,0,0.5) ;
+    opacity: 0;
+    transition: 1s;
+  
+}
+.item:hover:after{
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+
+}
+  
+/* sectiion2attachment */
+/* section5 */
+.section6{
+    overflow: auto;
+    width: 100%;
+   padding: 14px 18px;
+   height: 300px;
+   width: 100%;
+   background-image: url("../images/wallpaperflare.com_wallpaper\ \(22\).jpg");
+   background-size: cover;
+   background-attachment: fixed; 
+  
+}
+ /* background attachment */
+.section5{
+    overflow: auto;
+    width: 100%;
+   padding: 14px 18px;
+   height: 300px;
+   width: 100%;
+   background-image: url("../images/eee.jpeg");
+   background-size: cover;
+   background-attachment: fixed; 
+  
+}
+.eachpoint{
+    width: 25%;
+    float: left;
+  text-align: center;
+  margin-top: 80px;
+  
+ 
+}
+.section5iconss{
+    text-align: center;
+    color:steelblue;
+
+    font-size: 40px;
+}
+.Number{
+    color: white;
+    font-size: 30px;
+}
+span{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/* section10 */
+
+
+h5{
+    color: black;
+}
+.blog-content {
+    /* overflow: hidden; */
+    background-color: #f8f8f8;
+    
+   
+}
+.blog-item {
+   float: left;
+   width: 30%;
+   background-color: rgb(71, 71, 92);
+   border-radius:8px ;
+   position: relative;
+  
+}
+.blog-item::after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+    
+    top: 0;
+    left: 0;
+    background-color: rgb(135, 135, 176);
+    transition:1s ;
+
+    opacity: 0;
+   
+}
+.blog-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+
+}
+.blog-item-img {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+.blog-item.mg {
+    margin: 0 5%;
+}
+
+
+.blog-info {
+    padding: 20px;
+
+}
+.blog-list {
+    list-style: none;
+    margin: 10px 0;
+}
+.blog-list li {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 5px;
+    color: white;
+}
+.blog-list li i {
+    color: #6195ff;
+}
+.blog-title {
+    font-weight: bold;
+    margin: 20px 0;
+    margin-bottom: 25px;
+    color: white;
+}
+.blog-desc {
+    color: white;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+.blog-link {
+    color: #6195ff;
+}
+
+/* footer */
+
+.footer {
+    background-color:rgb(71, 71, 92);
+    text-align: center;
+    height: 250px;
+    padding: 60px 0;
+}
+.footer-links li {
+    display: inline-block;
+    background-color: #6195ff;
+    width: 50px;
+    height: 50px;
+  
+    border-radius: 50%;
+  
+}
+.footer-links {
+    list-style: none;
+ 
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+
+    margin-top: 30px;
+    
+}
+.footer-links li a {
+   
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #6195ff;
+    color: #fff;
+   
+    padding-top: 15px;
+   
+    padding-right: 15px;
+    font-size: 23px;
+    margin: 0 8px;
+    text-align: center;
+}
+.footer-links li a:hover{
+    color: #f8f8f8;
+}
+.mmg{
+    width: 80px;
+    height: 60px;
+}
+
+
+
+
+
+
+/* section7777777 */
+.Feature_item{
+    float: left;
+    background-color:rgb(71, 71, 92);
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+   
+}
+.Feature_image{
+    width: 90%;
+    margin: auto;
+   
+
+}
+
+.ww{
+    margin: 5px 5px;
+}
+.Feature_image img{
+    width: 100%;
+}
+.Feature_overlayy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+   
+}
+.Feature_overlayy a{
+    width: 40%;
+    height: 40%;
+    color: white;
+    font-size: 20px;
+}
+
+.Feature_item:hover .Feature_overlayy{
+visibility: visible;
+opacity: 0.5;
+}
+.Feature_item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(135, 135, 176);
+    transition:3s ;
+    opacity: 0;
+   
+}
+.Feature-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+
+} 
+.layer-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.layer-content-title{
+    color: white;
+   
+}
+
+.ff {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #6195ff;
+   
+    top: 15px;
+    transition: top 1s ,opacity .5s;
+    transition-delay: .6s;
+}
